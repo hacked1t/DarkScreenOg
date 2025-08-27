@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DarkScreen</string>
+    <string-array name="presets">
+        <item>Midnight Ritual</item>
+        <item>Haunted Library</item>
+        <item>Cyber Abyss</item>
+        <item>Blood Moon</item>
+        <item>Custom</item>
+        <item>None</item>
+
+    </string-array>
+</resources>

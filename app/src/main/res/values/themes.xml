@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.DarkScreen" parent="android:ThemeOverlay.Material.Dark.ActionBar" />
+          <!-- Base application theme. -->
+          <style name="Theme.MyApp" parent="android:Theme.Material.Light.NoActionBar">
+              <!-- ... other theme attributes ... -->
+          </style>
+
+
+</resources>

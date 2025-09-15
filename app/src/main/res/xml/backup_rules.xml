@@ -6,8 +6,10 @@
    See https://developer.android.com/about/versions/12/backup-restore
 -->
 <full-backup-content>
-    <!--
-   <include domain="sharedpref" path="."/>
-   <exclude domain="sharedpref" path="device.xml"/>
--->
+<!--     Include DataStore preferences -->
+   <include domain="file" path="datastore/user.prefs.preferences.pb"/>
+
+    <!-- Exclude volatile data -->
+    <exclude domain="cache" />
+    <exclude domain="files" pathe="temp" />
 </full-backup-content>

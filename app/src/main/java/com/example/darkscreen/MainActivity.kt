@@ -52,14 +52,14 @@ fun MainScreen() {
     var selectedPreset by remember { mutableStateOf<PresetData?>(null) }
     var isInitialized by remember { mutableStateOf(false) }
     
-    // Create preferences instance with safer initialization
+    // Create preferences instance initialization
     val presetPreferences = remember { PresetPreferences(appContext) }
     
     // Collect saved preferences only after a brief initialization delay
     val savedPresetName by presetPreferences.selectedPresetName.collectAsState(initial = null)
     val savedDarknessLevel by presetPreferences.darknessLevel.collectAsState(initial = 0.5f)
     
-    // Initialize DataStore safely
+    // Initialize DataStore 
     LaunchedEffect(Unit) {
         kotlinx.coroutines.delay(200) // Allow DataStore to initialize
         isInitialized = true
